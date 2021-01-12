@@ -1,0 +1,21 @@
+.navbar {
+  /* height: 8vh; */
+  background-color: whitesmoke;
+}
+
+nav.menu {
+  background-color: whitesmoke;
+  color:rgb(0, 0, 0); 
+  border-bottom: 5px groove black;
+}
+nav.menu > span > h1{
+  font-size: 2.0rem;
+}
+nav#voting-nav{
+  display: none;
+}
+nav.menu a:visited {
+  background-color: whitesmoke;
+  color:rgb(173, 76, 173); 
+  border-bottom: 5px groove black;
+}

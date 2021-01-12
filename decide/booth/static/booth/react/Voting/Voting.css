@@ -1,0 +1,267 @@
+/* #####################################################ADJUSTING TO SCREEN SIZE #################################*/
+
+/* @media (min-width: 576px) {  }
+@media (min-width: 768px) {  }
+@media (min-width: 992px) { }
+@media (min-width: 1200px) {  } */
+
+
+
+.option {
+  /* width: 70%; */
+  /* background: #EEE;
+    margin: 10px auto; */
+    text-align: center;
+    transition: all 0.5s ease;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container{
+margin:auto;
+float: none;
+margin-top: 70px;
+}
+
+.card-input>h1{
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+/* ############################################## QUESTIONS DISPLAY ANIMATION #################################*/
+
+.question {
+  overflow: auto;
+  display: none;
+
+}
+.question>h2{
+  color: black;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+div.active-question {
+  display: block;
+}
+
+/* ############################################### CARDS STYLE FORM #################################*/
+
+.card-input-element {
+  display: none;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  overflow: hidden;
+
+  background-color: transparent;
+  width: 12vw;
+  height: 32vh;
+  border-radius: 5px;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  padding:2%;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  border: 2px solid black; 
+  
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  margin: 0 auto;
+  float: none;
+  background-color: white;
+  color: black;
+}
+
+.flip-card-front:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.flip-card-front>h1{
+  font-size: 30px ;
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+/* .question .flip-card-back{
+  background-color: red;
+} */
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+  
+}
+
+/* Style for the cards grid */
+
+.alert {
+
+  border: solid black 3px;
+  opacity: 0.95;
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  
+    }
+    .alert.success {
+      background-color: #46D014;
+      color: black;
+    }
+    
+    .alert.danger {
+      background-color: #DA2E1A;
+      color: black;
+    } 
+    .alert.error {
+      background-color: #DA2E1A;
+      color: black;
+    } 
+    .closeAlert {
+      width: 15%;
+      background-color: white;
+      color: black;
+      border: 3px solid #555555;
+      border-radius: 10%;
+      text-align: center;
+    }
+    
+    .closeAlert:hover {
+      background-color: #555555;
+      color: white;
+    }
+  
+    .alert>p{
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+#next-question{
+  float: right;
+  margin :auto;
+  right: 0 !important;
+  
+}
+
+#voteButton{
+  margin: 0 auto;
+  float: none;
+}
+
+.active { 
+  border: orangered 5px; 
+}
+
+.card-input-element{
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+div.question{
+  background-image: url("https://www.newmexicopbs.org/productions/newmexicoinfocus/wp-content/uploads/2020/11/element5-digital-T9CXBZLUvic-unsplash.jpg");
+  background-color: #cccccc;
+  /* height: 500px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+  box-shadow: 0 0 8px 1px #cccccc inset;
+}
+
+
+div.alum-list.question > div.container-fluid > div > div{
+  margin:1%;
+  border: 2px solid #555;
+  border-radius:4px;
+  background-color: rgba(85, 85, 85, 0.418);
+}
+
+@keyframes check {0% {height: 0;width: 0;}
+25% {height: 0;width: 10px;}
+50% {height: 20px;width: 10px;}
+}
+.checkbox{background-color:#fff;display:inline-block;height:28px;margin:0 .25em;width:28px;border-radius:4px;border:1px solid #ccc;float:right}
+.checkbox span{display:block;height:28px;position:relative;width:28px;padding:0}
+.checkbox span:after{-moz-transform:scaleX(-1) rotate(135deg);-ms-transform:scaleX(-1) rotate(135deg);-webkit-transform:scaleX(-1) rotate(135deg);transform:scaleX(-1) rotate(135deg);-moz-transform-origin:left top;-ms-transform-origin:left top;-webkit-transform-origin:left top;transform-origin:left top;border-right:4px solid #fff;border-top:4px solid #fff;content:'';display:block;height:20px;left:3px;position:absolute;top:15px;width:10px}
+.checkbox span:hover:after{border-color:#999}
+.checkbox input{display:none}
+.checkbox input:checked + span:after{-webkit-animation:check .8s;-moz-animation:check .8s;-o-animation:check .8s;animation:check .8s;border-color:#555}
+.checkbox input:checked + .default:after{border-color:#444}
+
+@-webkit-keyframes move
+{
+    from {
+        left: -500px;
+    }
+    to {
+        left: 3000px;
+    }
+}
+@keyframes move
+{
+    from {
+        left: -500px;
+    }
+    to {
+        left: 3000px;
+    }
+}
+
+a#rotator {
+    text-decoration: none;
+    left: 3000px;
+    position: absolute;
+   
+    -webkit-animation: move 4s;
+    animation: move 4s;
+}
+
+a#rotator img {
+    width: 70%; 
+    
+}
+
+.votingAnimation{
+
+  z-index: 4000;
+
+}
+hr.linea {
+  border-top: 1px solid white;
+}
+

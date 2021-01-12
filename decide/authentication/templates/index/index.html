@@ -1,0 +1,31 @@
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'index/index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'index/menu.css' %}">
+    <title>DECIDE FULL GUADALFEO</title>
+</head>
+<body>
+    {% include "index/menu.html" %}
+
+    <section id="main">
+        {% if user.id %}
+            {% if not voting_user%}
+                <div class="container">
+                    <a href="{% url 'auth_register_complete' %}">Finish setting your profile here to access the platform</a>
+                </div>
+            {% else %}
+              <div class="container">
+                  <a href="/booth"><button>Votaciones</button></a>
+                  <a href="/visualizer"><button>Visualizer</button></a>
+              </div>
+            {% endif %}
+        {% else %}
+            <div class="container">
+                  <p>Incluir vista main sin usuario loggeado</p>
+            </div>
+        {% endif %}
+    </section>
+
+  </body>
+</html>

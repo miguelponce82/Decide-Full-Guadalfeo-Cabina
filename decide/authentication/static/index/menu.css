@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+.menu a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:visited
+{
+    color:rgb(173, 76, 173);
+}
+
+.menu a:hover
+{
+    text-decoration: underline;
+}
+
+.menu
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    background-color: whitesmoke;
+    color:rgb(0, 0, 0); 
+    border-bottom: 5px groove black;
+}
+
+.menu span
+{
+    flex-grow: 1;
+    padding: 10px;
+    align-self: center;
+}
+
+.menu ul
+{
+    direction: lt;
+    display: flex;
+    flex-grow: 1;
+    align-self: center;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.menu ul li
+{
+    padding: 10px;
+}
+
+nav.menu > span > h1{
+    font-size: 2.0rem;
+  }

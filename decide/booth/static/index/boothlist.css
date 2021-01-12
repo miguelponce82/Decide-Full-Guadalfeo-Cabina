@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100%;
+}
+nav.menu {
+  padding-top: 1% !important;
+  height: 6%;
+}
+#content {
+  height: 92%;
+}
+#content > :nth-child(1) {
+  height: 10%;
+}
+#content > :nth-child(2) {
+  height: 90%;
+}
+
+div.question {
+  height: 90%;
+  margin-bottom: 1%;
+}
+
+div.question {
+  background-image: url("https://www.newmexicopbs.org/productions/newmexicoinfocus/wp-content/uploads/2020/11/element5-digital-T9CXBZLUvic-unsplash.jpg");
+  background-color: #cccccc;
+  /* height: 500px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+  box-shadow: 0 0 8px 1px #cccccc inset;
+}
+
+/* ############################################### CARDS STYLE FORM #################################*/
+
+.card-input-element {
+  display: none;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  overflow: hidden;
+
+  background-color: transparent;
+  width: 20vw;
+  height: 20vh;
+  border-radius: 5px;
+  perspective: 1000px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  border: 2px solid black;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  margin: 0 auto;
+  float: none;
+  background-color: rgba(85, 85, 85, 0.418);
+  color: black;
+}
+
+.flip-card-front:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.flip-card-front > h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+
+/* .question .flip-card-back{
+    background-color: red;
+  } */
+
+.option {
+  /* width: 70%; */
+  /* background: #EEE;
+      margin: 10px auto; */
+  text-align: center;
+  transition: all 0.5s ease;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

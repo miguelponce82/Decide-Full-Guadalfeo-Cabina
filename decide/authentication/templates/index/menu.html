@@ -1,0 +1,15 @@
+<nav class="menu">
+    {% load socialaccount %}
+   <span>
+     <h1>DECIDE</h1>
+   </span>
+   <ul>
+       {% if user.is_authenticated %}
+          <li>Welcome, {{ user.username }} !</li>
+          <li><a href="{% url 'auth_logout' %}">Logout</a></li>
+       {% else %}
+          <li><a href="{% url 'auth_login' %}">Login</a></li>
+          <li><a href="{% provider_login_url 'google' %}">Login with Google</a> </li>
+       {% endif %}
+   </ul>
+</nav>

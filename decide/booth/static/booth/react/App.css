@@ -1,0 +1,70 @@
+/* ############# THIS IS FOR THE RESPONSIVE DISPLAY ########### */
+
+html,
+body {
+  height: 100%;
+}
+nav.menu {
+  padding-top: 1% ;
+  height: 6%;
+}
+#react-root {
+  height: 92%;
+}
+.App {
+  height: 100%;
+}
+.App > :nth-child(1) {
+  height: 0%;
+}
+.App > :nth-child(2) {
+  height: 100%;
+}
+div#voting-body > .row:nth-child(1) {
+  height: 10%;
+}
+div#voting-body > .row:nth-child(2) {
+  height: 90%;
+}
+div#voting-body > .row:nth-child(2) > .col {
+  height: 100%;
+}
+
+form {
+  height: 100%;
+}
+form > div.question {
+  height: 90%;
+  margin-bottom: 1%;
+}
+
+div.question > div:nth-child(1){
+  height: 10%;
+}
+div.question > div:nth-child(2){
+  height: 90%;
+}
+
+form > button {
+  height: 8%;
+}
+
+.container-fluid {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+
+/* ############# THIS IS FOR THE STYLE ########### */
+/*
+.App {
+  /* background-color: rgb(65, 65, 65);
+  background-color: whitesmoke; */
+/* } */
+
+body{
+  /* background-color: rgb(87, 82, 82); */
+  /* color: rgb(245, 235, 235); */
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+}
